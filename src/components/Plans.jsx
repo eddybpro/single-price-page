@@ -10,16 +10,18 @@ function Plans() {
         <p className="Plan-Info">Full access for less than $1 a day</p>
         <button className="Plan-Btn">Sign Up</button>
       </div>
-      <ul className="WhyUsBox">
-        <h2 className="WhyUsBox-Title">why us</h2>
-        <li>Tutorials by industry experts</li>
-        <li>Peer & expert code review</li>
-        <li>Coding exercises </li>
-        <li>Access to our GitHub repos</li>
-        <li>Community forum </li>
-        <li>Flashcard decks</li>
-        <li>New videos every week</li>
-      </ul>
+      <div className="WhyUsBox">
+        <ul>
+          <h2 className="WhyUsBox-Title">why us</h2>
+          <li>Tutorials by industry experts</li>
+          <li>Peer & expert code review</li>
+          <li>Coding exercises </li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum </li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
     </main>
   );
 }

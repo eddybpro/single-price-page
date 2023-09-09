@@ -122,15 +122,23 @@ main {
   background-color: var(--color-site-3);
 }
 
-.WhyUsBox > li {
+.WhyUsBox > ul > li {
   font-size: 1.6rem;
   color: var(--color-site-1);
   margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 700px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
   header,
   main {
+    width: 100%;
     max-width: 90rem;
     margin: auto;
   }
