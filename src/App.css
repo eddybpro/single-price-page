@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(179, 62%, 43%);
+  --color-brand-2: hsl(71, 73%, 54%);
+  --color-brand-3: hsl(218, 22%, 67%);
+
+  --color-site-1: hsl(204, 43%, 93%);
+  --color-site-2: hsl(0, 0%, 100%);
+  --color-site-3: hsl(179, 56%, 61%);
+
+  --font-karla: "Karla", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-karla);
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-site-1);
+  padding: 6rem 2rem 4rem;
+}
+
+header {
+  background-color: var(--color-site-2);
+  padding: 3rem 1.5rem 4rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.HeaderTitle {
+  color: var(--color-brand-1);
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.HeaderSubTitle {
+  color: var(--color-brand-2);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.HeaderPara {
+  font-size: 1.6rem;
+  color: var(--color-brand-3);
+  line-height: 2.2rem;
+}
+
+main {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.Plan {
+  padding: 3rem 1.5rem 2rem;
+  background-color: var(--color-brand-1);
+}
+
+.Plan-Title,
+.WhyUsBox-Title {
+  color: var(--color-site-2);
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.Plan-Title + div {
+  margin-bottom: 1rem;
+}
+
+.Plan-Price {
+  font-size: 2.8rem;
+  margin-right: 0.5rem;
+  color: var(--color-site-2);
+}
+
+.Plan-Price + span {
+  color: var(--color-site-1);
+  font-size: 1.6rem;
+}
+
+.Plan-Info {
+  color: var(--color-site-1);
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.Plan-Btn {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  background-color: var(--color-brand-2);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: var(--color-site-1);
+  padding: 1.5rem 0;
+}
+
+.WhyUsBox {
+  padding: 3rem 1.5rem 2rem;
+  background-color: var(--color-site-3);
+}
+
+.WhyUsBox > li {
+  font-size: 1.6rem;
+  color: var(--color-site-1);
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  header,
+  main {
+    max-width: 90rem;
+    margin: auto;
+  }
+
+  .HeaderTitle {
+    font-size: 3.8rem;
+  }
+
+  .HeaderSubTitle {
+    font-size: 2.8rem;
+  }
+
+  .HeaderPara {
+    width: 55rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Plan-Title,
+  .WhyUsBox-Title {
+    font-size: 2.8rem;
+  }
+}
