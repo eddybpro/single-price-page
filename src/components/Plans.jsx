@@ -11,8 +11,8 @@ function Plans() {
         <button className="Plan-Btn">Sign Up</button>
       </div>
       <div className="WhyUsBox">
+        <h2 className="WhyUsBox-Title">why us</h2>
         <ul>
-          <h2 className="WhyUsBox-Title">why us</h2>
           <li>Tutorials by industry experts</li>
           <li>Peer & expert code review</li>
           <li>Coding exercises </li>
